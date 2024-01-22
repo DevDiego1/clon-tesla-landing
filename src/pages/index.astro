@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LandingHeader from '../components/LandingHeader.astro'
+import HeroSection from '../components/HeroSection.astro';
+import ChargeSection from '../components/ChargeSection.astro'
+import XSection from '../components/XSection.astro';
+import Ssection from '../components/Ssection.astro';
+import Ysection from '../components/Ysection.astro';
+---
+
+<Layout title="Welcome to Tesla">
+	<LandingHeader />
+
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll">
+
+		<!-- Hero Sections -->
+		<div class="snap-center">
+			<HeroSection />
+		</div>
+		<div class="snap-center">
+			<ChargeSection />
+		</div>
+		<div class="snap-center">
+			<XSection />
+		</div>
+		<div class="snap-center">
+			<Ssection />
+		</div>
+		<div class="snap-center">
+			<Ysection />
+		</div>
+
+	</main>
+</Layout>
